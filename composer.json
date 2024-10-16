@@ -1,0 +1,33 @@
+{
+    "name": "vanya_php/custom-lib",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "VanyaPhp\\CustomFramework\\": "src/",
+            "Models\\": "models/"
+        },
+        "files": [
+            "bootstrap/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ivan Lodnya",
+            "email": "LodnyaI@eurotorg.by"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^3.3",
+        "mockery/mockery": "^1.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "ext-pdo": "*"
+    }
+}
